@@ -1,0 +1,20 @@
+<header>
+  <nav>
+    <a  [routerLink]="['login']">Login</a>
+    <a [routerLink]="['add-accounts']">Add accounts</a>
+    <a [routerLink]="['transactions']">Transactions</a>
+    <a [routerLink]="['reviews']">Reviews</a>
+    <a [routerLink]="['reports']">Report</a>
+  </nav>
+</header>
+<main>
+  <h1>{{title}}!</h1>
+
+  <!-- Images (and assets) are parsed and loaded from within the public directory -->
+  <!--<img src="/img/angular.png">-->
+
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <a [href]="url">Some url</a>
+</footer>
